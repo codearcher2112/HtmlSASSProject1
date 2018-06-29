@@ -1,0 +1,128 @@
+.heritageSection {
+  padding-bottom: 40px;
+  .heritageContainer {
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  // ****************************** need edit
+  // slider styles
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+  .navigationDots {
+    position: relative;
+  }
+
+  .slick-dots {
+    position: static;
+    line-height: 13px;
+    li {
+      width: 13px;
+      height: 13px;
+      margin: 0 10px;
+      button {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+
+  .slick-dots li button {
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .slick-dots li button:before {
+    font-size: 13px;
+    line-height: 13px;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    color: #ccc;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: $secondary-color;
+  }
+
+  .slick-active {
+    color: $secondary-color;
+  }
+
+  .slick-current {
+    background: $white;
+    border: 5px solid $white;
+    @include boxShadow(0px 3px 3px 0px rgba(0, 0, 0, 0.25));
+    transform: scale(1.4);
+    z-index: 1;
+    .middle {
+      display: flex;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .slick-track {
+    padding: 45px 0;
+  }
+
+  //slider nav arrows
+  .sliderPrevBtn {
+    left: -30px;
+  }
+
+  .sliderNextBtn {
+    right: -30px;
+  }
+
+  // ****************************** need edit
+}
+
+.petCarousel {
+  margin: 0 30px;
+  .carouselItem {
+    position: relative;
+    margin: 0 4px;
+    border: 5px solid transparent;
+    outline: none;
+    // cursor: pointer;
+    @include transition(0.4s);
+  }
+  img {
+    max-width: 100%;
+  }
+  .middle {
+    @include pos-abs($top: 0, $right: null, $bottom: null, $left: 0);
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(252,179,22, 0.7);
+    text-align: center;
+    opacity: 0;
+    @include transition(0.3s);
+    .middleContent {
+      width: 100%;
+      margin: auto;
+    }
+    h5 {
+      width: 100%;
+      padding-bottom: 10px;
+      font-size: 16px;
+    }
+    a {
+      padding: 4px 15px;
+      background: #fff;
+      border: 2px solid transparent;
+      @include radius(7px);
+      font-family: $font-quaternary;
+      font-size: 13px;
+      color: $secondary-color;
+    }
+  }
+}

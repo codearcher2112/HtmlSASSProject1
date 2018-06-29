@@ -1,0 +1,301 @@
+@media only screen and (max-width: $screen-lg) {
+  .logoHolder {
+    padding: 26px 20px 0 0;
+  }
+
+  .primaryNavLeft {
+    &>li {
+      margin-right: 20px;
+    }
+  }
+
+  .primaryNavRight {
+    &>li {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md) {
+  header {
+    display: block;
+    height: 100%;
+    width: 0;
+    padding-top: 15px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: $white;
+    overflow: hidden;
+    @include boxShadow(inset 0px 1px 4px 0px rgba(0, 0, 0, 0.13), 0px 1px 3px 0px rgba(0, 0, 0, 0.22));
+    @include transition(0.3s);
+  }
+
+  .mobileTop {
+    display: block;
+    padding: 18px 0;
+  }
+
+  .burgerNav {
+    z-index: 10;
+  }
+
+  .burgerBtn {
+    width: 45px;
+    background: transparent;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 14px;
+    background-color: $primary-color;
+    @include transition(0.4s);
+  }
+
+  .bar3 {
+    margin-bottom: 0;
+  }
+
+  /*Burger Button Animation*/
+
+  .change .bar1 {
+    background-color: $white;
+    -webkit-transform: rotate(-45deg) translate(-10px, 13px);
+    transform: rotate(-45deg) translate(-10px, 13px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    background-color: $white;
+    -webkit-transform: rotate(45deg) translate(-10px, -14px);
+    transform: rotate(45deg) translate(-10px, -14px);
+  }
+
+  .mobilePhone {
+    width: 40px;
+    height: 40px;
+    @include radius(100%);
+    background: $medium-gray;
+    a {
+      @include displayFlex;
+      height: 100%;
+      @include radius(100%);
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    img {
+      display: inline-block;
+      width: 44%;
+      margin: auto;
+    }
+  }
+
+  // SideNav Styles Start
+  .sideNavActive {
+    width: 321px;
+  }
+
+  .mainPassive {
+    margin-left: 321px;
+    &:after {
+      content: "";
+      @include pos-abs($top: 0, $right: null, $bottom: null, $left: 0);
+      width: 100%;
+      height: 100%;
+      background: rgba(129, 129, 129, 0.5);
+    }
+  }
+
+  .logoHolder {
+    float: none;
+    width: 45%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .secondaryNav {
+    display: none;
+  }
+
+  .sidebarMenuBts {
+    display: block;
+    .right {
+      padding-top: 9px;
+      padding-right: 30px;
+      a {
+        font-family: $font-quaternary;
+        color: $secondary-color;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .callUs {
+      @include displayFlex;
+      width: 22px;
+      height: 22px;
+      margin-right: 10px;
+      background: $secondary-color;
+      @include radius(100%);
+      img {
+        display: block;
+        width: 50%;
+        margin: auto;
+      }
+    }
+  }
+
+  .navBtnHolder {
+    display: none;
+  }
+
+  .headerMain {
+    float: none;
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .primaryNavLeft, .primaryNavRight {
+    float: none;
+    &>li {
+      display: block;
+      margin: 0;
+      padding: 15px 0;
+      // a {
+      //   display: block;
+      // }
+    }
+    .menuBorder {
+      border-bottom: none;
+    }
+  }
+
+  .primaryNavRight {
+    &>li:last-child {
+      a {
+        display: inline-block;
+        color: #666666;
+      }
+      .spanCircle {
+        position: relative;
+      }
+      img {
+        @include pos-abs($top: 50%, $right: null, $bottom: null, $left: 50%);
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+      }
+    }
+    .mobileMenuFooter {
+      display: block;
+      a {
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .mobileDrop {
+    display: block;
+    cursor: pointer;
+  }
+
+  .webDrop {
+    display: none;
+  }
+
+  .arrowDown {
+    // position: relative;
+    &:after {
+      @include pos-abs($top: 15px, $right: 0, $bottom: null, $left: null);
+      margin: 0;
+    }
+  }
+
+  //Accordion Styles
+  .dropBox {
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    li {
+      padding: 15px 0;
+    }
+  }
+
+  .leftDropPos, .rightDropPos {
+    position: static;
+  }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .logoMobile {
+    width: 116px;
+    z-index: 1;
+  }
+
+  .burgerBtn {
+    width: 30px;
+  }
+
+  .flexOrder2 {
+    @include flexOrder(2);
+  }
+
+  .flexOrder1 {
+    @include flexOrder(1);
+  }
+
+  .bar1, .bar2 {
+    margin-bottom: 8px;
+  }
+
+  .change .bar1 {
+    height: 5px;
+    @include radius(2px);
+    transform: rotate(-45deg) translate(-15px, 14px);
+  }
+
+  .change .bar3 {
+    height: 5px;
+    @include radius(2px);
+    transform: rotate(45deg) translate(-16px, -15px);
+  }
+
+  .change .bar1,
+  .change .bar3 {
+    background: $primary-color;
+  }
+
+  .mainPassive {
+    margin-left: 0;
+    &:after {
+      background: transparent;
+    }
+  }
+
+  .sideNavActive {
+    position: absolute;
+    width: 100%;
+    padding-top: 0;
+    top: 65px;
+    .logoHolder {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  .mobilePhone {
+    width: 30px;
+    height: 30px;
+  }
+}

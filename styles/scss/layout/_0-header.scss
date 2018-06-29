@@ -1,0 +1,225 @@
+/* ----- Main Div Styles  ----- */
+.main {
+  @include pos-abs($top: 0, $left: 0);
+  width: 100%;
+  @include transition(0.3s);
+}
+
+/* ----- Mobile Navigetion Top Styles ----- */
+
+.mobileTop {
+  display: none;
+}
+
+.logoMobile {
+  width: 17%;
+  a {
+    display: block;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+/* ----- Header Styles ----- */
+header {
+  min-height: 95px;
+  padding-top: 11px;
+  @include boxShadow(1px 1px 3px 0px rgba(0, 0, 0, 0.22));
+}
+
+/*----- Logo -----*/
+.logoHolder {
+  float: left;
+  width: 17%;
+  padding: 17px 49px 2px 0;
+  a {
+    display: block;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.headerMain {
+  float: right;
+  width: 83%;
+}
+
+// Secondary Nav
+.secondaryNav {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 22px;
+  li {
+    display: inline-block;
+    &:first-child {
+      padding-right: 15px;
+      border-right: 1px solid #e5e5e5;
+    }
+    &:nth-child(2) {
+      padding-left: 10px;
+    }
+  }
+
+  a {
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: #666666;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .spanCircle {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: #666666;
+    @include radius(100%);
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .spanLightGray {
+    color: #e5e5e5;
+  }
+
+  img {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.spanCircle {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: #666666;
+  @include radius(100%);
+  line-height: 14px;
+  text-align: center;
+}
+
+//Primary Nav
+.menuHolder {
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.sidebarMenuBts {
+  display: none;
+}
+
+.primaryNavLeft, .primaryNavRight {
+  li {
+    position: relative;
+    display: inline-block;
+  }
+}
+
+.primaryNavLeft {
+  float: left;
+  padding-top: 9px;
+  &>li {
+    margin-right: 46px;
+  }
+}
+
+.navBtnHolder {
+  float: left;
+}
+
+.primaryNavRight {
+  float: right;
+  padding-top: 9px;
+  &>li {
+    margin-left: 40px;
+  }
+  .mobileMenuFooter {
+    display: none;
+  }
+}
+
+.arrowDown {
+  &:after {
+    display: inline-block;
+    margin-left: 5px;
+    content: "\f107";
+    font: bold 18px/1 FontAwesome;
+    @include transition(0.3s);
+  }
+}
+
+.arrowUp {
+  &:after {
+    transform: rotateZ(180deg);
+  }
+}
+
+.menuBorder {
+  padding-bottom: 23px;
+  border-bottom: 3px solid transparent;
+  &:hover {
+    border-bottom: 3px solid $secondary-color;
+  }
+}
+
+.leftDropPos {
+  @include pos-abs($top: 47px, $right: null, $bottom: null, $left: 0);
+}
+
+.rightDropPos {
+  @include pos-abs($top: 47px, $right: 0, $bottom: null, $left: null);
+}
+
+.mobileDrop {
+  display: none;
+}
+
+.dropBox {
+  display: none;
+  width: 212px;
+  padding: 20px;
+  background: $white;
+  @include radius(0 0 10px 10px);
+  @include boxShadow(0px 1px 3px 0px rgba(0, 0, 0, 0.22), 0px 1px 4px 0px rgba(0, 0, 0, 0.13));
+  z-index: 1;
+  li {
+    display: block;
+    padding-bottom: 10px;
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  a {
+    font-family: $font-tertiar;
+    font-size: 16px;
+    color: $medium-gray;
+    &:after {
+      display: inline-block;
+      opacity: 0;
+      margin-left: 8px;
+      content: "\f105";
+      font: normal 18px/1 FontAwesome;
+      @include transition(0.3s);
+    }
+    &:hover {
+      color: $dark-gray;
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}

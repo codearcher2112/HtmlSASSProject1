@@ -1,0 +1,111 @@
+.testimonials {
+  padding: 50px 0;
+  background: #f6f6f6;
+  @include boxShadow(inset 0px 0px 7px 0px rgba(0, 0, 0, 0.2));
+}
+
+.testimonialCarousel {
+  max-width: 705px;
+  margin: 0 auto;
+  .slick-list {
+    padding: 25px 5px;
+    &:after {
+      content: "\e977";
+      font-family: "icomoon";
+      position: absolute;
+      left: 20px;
+      top: 0;
+      display: block;
+      font-size: 40px;
+      color: #e4e4e4;
+      z-index: -1;
+    }
+    &:before {
+      content: "\e978";
+      font-family: "icomoon";
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      display: block;
+      font-size: 40px;
+      color: #e4e4e4;
+      z-index: -1;
+    }
+  }
+  .slick-dots {
+    position: static;
+    line-height: 13px;
+    li {
+      width: 13px;
+      height: 13px;
+      margin: 0 10px;
+      button {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  .slick-dots li button {
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  .slick-dots li button:before {
+    text-shadow: inset  0px 3px 7px rgba(0, 0, 0, 0.35);
+    font-size: 13px;
+    line-height: 13px;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    color: #ccc;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $secondary-color;
+  }
+
+  .slick-active {
+    color: $secondary-color;
+  }
+
+  //arrows
+  .sliderPrevBtn {
+    left: -20px;
+  }
+
+  .sliderNextBtn {
+    right: -20px;
+  }
+}
+
+.testimonialCarouselItem {
+  position: relative;
+  @include afterClearfix;
+  margin: 0 38px;
+  padding: 30px 25px;
+  background: $white;
+  @include radius(10px);
+  outline: none;
+  span {
+    margin-left: 45px;
+  }
+}
+
+.testimonialImgHolder {
+  float: left;
+  width: 130px;
+  height: 130px;
+  padding: 5px;
+  background: $white;
+  @include boxShadow(0px 3px 3px 0px rgba(0, 0, 0, 0.25));
+}
+
+.slick-slide {
+  img {
+    width: 100%;
+  }
+}
+
+.testimonialTxt {
+  float: left;
+  padding-left: 30px;
+}

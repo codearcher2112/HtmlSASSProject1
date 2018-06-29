@@ -1,0 +1,43 @@
+/*----- 1.Hero Floor ------*/
+.orangeBanner {
+  height: 390px;
+  padding-top: 75px;
+  @include bg-img($img: "new/01_hero-bg.png", $bg_color: null, $repeat: no-repeat, $position: center, $bg_size: cover, $bg_attachment: null);
+}
+
+.containerHero {
+  position: relative;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 25px;
+  text-align: right;
+}
+
+.heroName {
+  @include pos-abs($top: null, $right: null, $bottom: -166px, $left: -100px);
+  display: inline-block;
+  text-align: left;
+}
+
+.heroImgHolder {
+  @include pos-abs($top: -20px, $right: null, $bottom: null, $left: null);
+  width: 539px;
+  img {
+    max-width: 100%;
+  }
+}
+
+.heroFooter {
+  padding-top: 30px;
+}
+
+.formHolder {
+  padding: 25px 0 55px;
+  div, button {
+    vertical-align: middle;
+  }
+  div {
+    margin-right: 15px;
+  }
+}

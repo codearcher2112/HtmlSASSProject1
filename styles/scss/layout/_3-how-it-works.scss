@@ -1,0 +1,53 @@
+/* ----- How it works Section Styles ----- */
+.howSection {
+  padding: 45px 0;
+}
+
+.sectionInnerShadow {
+  @include boxShadow(inset 0px 0px 7px 0px rgba(0, 0, 0, 0.2));
+}
+
+.howItIconHolder {
+  width: 82px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.howList {
+  li {
+    position: relative;
+    padding-top: 100px;
+    &:before {
+      content: " ";
+      @include pos-abs($top: 0, $right: null, $bottom: null, $left: 50%);
+      transform: translate(-50%, 0);
+      display: block;
+      width: 80px;
+      height: 80px;
+      background-size: contain;
+    }
+  }
+}
+
+.howIcon-1 {
+  &:before {
+    background: url("../../img/icon_stethoscope.svg") no-repeat center bottom;
+  }
+}
+
+.howIcon-2 {
+  &:before {
+    background: url("../../img/icon_claim-app.svg") no-repeat center bottom;
+  }
+}
+
+.howIcon-3 {
+  &:before {
+    background: url("../../img/icon_reimbursement.svg") no-repeat center bottom;
+  }
+}

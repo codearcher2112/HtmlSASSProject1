@@ -1,0 +1,35 @@
+@media only screen and (max-width: $screen-lg) {
+
+}
+
+@media only screen and (max-width: $screen-md) {
+
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .howSection {
+    padding: 20px 0;
+    h4 {
+      font-size: 24px;
+    }
+  }
+
+  .howList {
+    li {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      &:before {
+        width: 52px;
+        height: 48px;
+      }
+    }
+
+    .txt-md {
+      font-size: 16px;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+}

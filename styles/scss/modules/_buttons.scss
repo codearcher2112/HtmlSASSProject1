@@ -1,0 +1,164 @@
+// Buttons
+.ghost-small-btn {
+  position: relative;
+  display: inline-block;
+  min-height: 40px;
+  padding: 10px;
+  @include radius(10px);
+  font-family: $font-quaternary;
+  font-size: 16px;
+  &:hover {
+    @include boxShadow(0px 6px 20px 0px rgba(0, 0, 0, 0.19), 0px 8px 17px 0px rgba(0, 0, 0, 0.2));
+  }
+}
+
+.secondary-btn {
+  position: relative;
+  display: inline-block;
+  // min-height: 44px;
+  padding: 8px 15px;
+  @include radius(10px);
+  @include boxShadow(0px 1px 4px 0px rgba(0, 0, 0, 0.13),  0px 1px 3px 0px rgba(0, 0, 0, 0.22));
+  font-family: $font-quaternary;
+  font-size: 18px;
+  &:hover {
+    @include boxShadow(0px 6px 20px 0px rgba(0, 0, 0, 0.19), 0px 8px 17px 0px rgba(0, 0, 0, 0.2));
+  }
+}
+
+.primary-btn {
+  position: relative;
+  display: inline-block;
+  min-height: 50px;
+  padding: 10px 18px;
+  @include radius(10px);
+  @include boxShadow(0px 1px 4px 0px rgba(0, 0, 0, 0.13),  0px 1px 3px 0px rgba(0, 0, 0, 0.22));
+  font-family: $font-quaternary;
+  font-size: 22px;
+  &:hover {
+    @include boxShadow(0px 6px 20px 0px rgba(0, 0, 0, 0.19), 0px 8px 17px 0px rgba(0, 0, 0, 0.2));
+  }
+}
+
+//Button Colors
+.secondary-color-btn {
+  border: 2px solid $secondary-color;
+  color: $secondary-color;
+  &:hover, &:active {
+    background: $secondary-color;
+    color: $white;
+  }
+}
+
+.primary-color-btn {
+  border: 2px solid $primary-color;
+  color: $primary-color;
+  &:hover, &:active {
+    background: $primary-color;
+    color: $white;
+  }
+}
+
+.medium-gray-btn {
+  border: 2px solid $medium-gray;
+  color: $medium-gray;
+}
+
+.transparent-border {
+  border: 2px solid transparent;
+}
+
+// Button Background Colors
+.btn-bg-white {
+  background-color: $white;
+}
+
+.btn-secondary-bg {
+  background-color: $secondary-color;
+  color: $white;
+  &:hover, &:active {
+    background-color: darken($secondary-color, 10%);
+  }
+}
+
+.btn-primary-bg {
+  background-color: $primary-color;
+  color: $white;
+  &:hover, &:active {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-medium-gray-bg {
+  background-color: $medium-gray;
+  color: $white;
+}
+
+// Button Arrow Classes
+.heading-btn-shadow {
+  @include boxShadow(0px 1px 4px 0px rgba(0, 0, 0, 0.13),  0px 1px 3px 0px rgba(0, 0, 0, 0.22));
+  &:hover {
+    @include boxShadow(0px 6px 20px 0px rgba(0, 0, 0, 0.19), 0px 8px 17px 0px rgba(0, 0, 0, 0.2));
+  }
+}
+
+//Slick Slider Custom Buttons
+
+.sliderPrevBtn, .sliderNextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 23px;
+  height: 23px;
+  background: transparent;
+  border: 2px solid $secondary-color;
+  @include radius(100%);
+  color: $secondary-color;
+  z-index: 1;
+}
+
+.sliderPrevBtn {
+  &:before {
+    content: '\e912';
+    font-family: 'icomoon';
+    font-size: 18px;
+  }
+}
+
+.sliderNextBtn {
+  &:before {
+    content: '\e911';
+    font-family: 'icomoon';
+    font-size: 18px;
+  }
+}
+
+/* ----- Button Arrows ----- */
+
+.btn-arrow-sm {
+  padding-right: 25px;
+  &:after {
+    content: "\f105";
+    display: block;
+    @include pos-abs($top: 10px, $right: 10px);
+    font-family: FontAwesome;
+  }
+}
+
+.btn-arrow-md, .btn-arrow-lg {
+  &:after {
+    content: "\f105";
+    display: block;
+    @include pos-abs($top: 11px, $right: 10px);
+    font-family: FontAwesome;
+    font-size: 26px;
+  }
+}
+
+.btn-arrow-md {
+  padding-right: 44px;
+}
+
+.btn-arrow-lg {
+  padding-right: 76px;
+}

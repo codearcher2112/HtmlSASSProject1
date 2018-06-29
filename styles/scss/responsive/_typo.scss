@@ -1,0 +1,29 @@
+@media only screen and (max-width: $screen-md) {
+  h1, h2 {
+    font-size: 44px
+  }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  h1 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  h1 {
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  h2 {
+    line-height: 1;
+    letter-spacing: 0;
+  }
+}

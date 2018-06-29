@@ -1,0 +1,39 @@
+@media only screen and (max-width: $screen-lg) {
+  .insuranceCard {
+    padding: 40px 30px;
+  }
+}
+
+@media only screen and (max-width: $screen-md) {
+
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .aboutUsSection {
+    h3 {
+      font-size: 30px;
+      line-height: 1.3;
+    }
+
+    .txt-lg {
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .txt-md {
+      padding-top: 5px;
+      font-size: 16px;
+      line-height: 1.3;
+    }
+  }
+
+  .aboutUsSlider {
+    .sliderPrevBtn, .sliderNextBtn {
+      display: none !important;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+}

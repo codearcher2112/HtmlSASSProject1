@@ -1,0 +1,45 @@
+@media only screen and (max-width: $screen-lg) {
+  .heritageSection {
+    .slick-dots {
+      margin-top: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-md) {
+
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .heritageSection {
+    .slick-current {
+      .middle {
+        display: none;
+      }
+    }
+
+    .txt-lg {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+
+  .h4Special {
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  .petCarousel {
+    .carouselItem {
+      border: 2px solid transparent;
+    }
+  }
+
+  .heritageSection {
+    .sliderPrevBtn, .sliderNextBtn {
+      display: none !important;
+    }
+  }
+}

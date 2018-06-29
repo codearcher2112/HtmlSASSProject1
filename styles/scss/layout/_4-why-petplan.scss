@@ -1,0 +1,65 @@
+// .whySectionBG {
+//   position: relative;
+//   &:after {
+//     content: url("../../../img/puppy.png");
+//     @include pos-abs($top: null, $right: null, $bottom: 0, $left: 0);
+//     max-width: 100%;
+//   }
+// }
+.whySection {
+  padding-top: 55px;
+  padding-bottom: 90px;
+}
+
+.whySectionBg {
+  @include pos-abs($top: null, $right: null, $bottom: -70px, $left: 30px);
+  width: 285px;
+  height: 175px;
+  z-index: -1;
+  img {
+    max-width: 100%;
+  }
+}
+.whyList {
+  li {
+    position: relative;
+    float: left;
+    padding-right: 45px;
+    padding-left: 65px;
+    &:first-child, &:nth-child(2) {
+      padding-bottom: 30px;
+    }
+    &:before {
+      content: " ";
+      @include pos-abs($top: 0, $right: null, $bottom: null, $left: 0);
+      display: block;
+      width: 55px;
+      height: 55px;
+      background-size: contain;
+    }
+  }
+}
+
+.whyIcon-1 {
+  &:before {
+    background: url("../../img/icon_accidents.svg") no-repeat center;
+  }
+}
+
+.whyIcon-2 {
+  &:before {
+    background: url("../../img/icon_rx.svg") no-repeat center;
+  }
+}
+
+.whyIcon-3 {
+  &:before {
+    background: url("../../img/icon_syringe.svg") no-repeat center;
+  }
+}
+
+.whyIcon-4 {
+  &:before {
+    background: url("../../img/icon_vet-fees.svg") no-repeat center;
+  }
+}

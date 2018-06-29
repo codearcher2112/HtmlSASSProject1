@@ -1,0 +1,13 @@
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: $white;
+  font-family: $font-tertiar;
+  font-size: $main-font-size;
+  outline: none;
+  word-wrap: break-word;
+  color: $dark-gray;
+}

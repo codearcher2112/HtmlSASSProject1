@@ -1,0 +1,70 @@
+.aboutUsSection {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+.aboutUsSlider {
+  .aboutUsItem {
+    margin: 0 10px;
+    padding: 5px;
+    background: $white;
+    outline: none;
+    @include boxShadow(0px 2px 4px 0px rgba(0, 0, 0, 0.13), 0px 2px 5px 0px rgba(0, 0, 0, 0.13));
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .slick-track {
+    padding: 25px 0;
+  }
+
+  // dot styles
+  .slick-dotted.slick-slider {
+    margin-bottom: 24px;
+  }
+
+  .slick-dots {
+    position: static;
+    line-height: 13px;
+    li {
+      width: 13px;
+      height: 13px;
+      margin: 0 10px;
+      button {
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  .slick-dots li button {
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  .slick-dots li button:before {
+    text-shadow: inset  0px 3px 7px rgba(0, 0, 0, 0.35);
+    font-size: 13px;
+    line-height: 13px;
+    width: 13px;
+    height: 13px;
+    opacity: 1;
+    color: #ccc;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $secondary-color;
+  }
+
+  .slick-active {
+    color: $secondary-color;
+  }
+
+  .sliderPrevBtn {
+    left: 25px;
+  }
+
+  .sliderNextBtn {
+    right: 25px;
+  }
+}

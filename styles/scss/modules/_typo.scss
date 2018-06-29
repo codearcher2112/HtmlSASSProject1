@@ -1,0 +1,97 @@
+// Headings
+h1 {
+  font-family: $font-quaternary;
+  font-size: 70px;
+  line-height: 77px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: $white;
+}
+
+h2 {
+  font-family: $font-quinary;
+  font-weight: lighter;
+  font-size: 70px;
+  line-height: 70px;
+  letter-spacing: 2px;
+  color: $tertiary-color;
+}
+
+h3 {
+  font-family: $font-tertiar;
+  font-weight: lighter;
+  font-size: 36px;
+}
+
+h4 {
+  font-family: $font-quaternary;
+  font-size: 32px;
+}
+
+.h4Special {
+  margin-bottom: 10px;
+  font-family: "AvenirLTStd-Black", sans-serif;
+  line-height: 34px;
+  color: $primary-color;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+.font-primary {
+  font-family: $font-primary;
+}
+
+.font-secondary {
+  font-family: $font-secondary;
+}
+
+.font-tertiar {
+  font-family: $font-tertiar;
+}
+
+// Text
+.txt-lg {
+  // font-family: $font-secondary;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.txt-md {
+  font-family: $font-tertiar;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.txt-sm {
+  font-family: $font-tertiar;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.caption1 {
+  font-family: $font-quaternary;
+  font-size: 14px;
+}
+
+.caption2 {
+  font-family: $font-quinary;
+  font-size: 20px;
+  line-height: 24px;
+}
+// Links
+
+.primary-nav, .dropdown-nav {
+  font-family: $font-quaternary;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.inline-txt-link {
+  font-family: $font-secondary;
+  color: $primary-color;
+  &:hover, &:active {
+    text-decoration: underline;
+  }
+}

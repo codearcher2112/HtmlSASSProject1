@@ -1,0 +1,98 @@
+@media only screen and (max-width: $screen-lg) {
+  .heroImgHolder {
+    max-width: 45%;
+  }
+
+  // .heroFooterLeft {
+  //   padding-top: 90px;
+  //   padding-left: 30px;
+  // }
+  .heroName {
+    @include pos-abs($top: null, $right: null, $bottom: -265px, $left: 50px);
+  }
+}
+
+@media only screen and (max-width: $screen-md) {
+  .heroImgHolder {
+    max-width: 50%;
+  }
+
+  .heroFooter {
+    padding-top: 90px;
+    &>div {
+      float: none;
+    }
+  }
+
+  .heroName {
+    @include pos-abs($top: null, $right: null, $bottom: -65%, $left: 40%);
+  }
+
+  // .heroFooterLeft {
+  //   padding: 12px 0 12px 12px;
+  //   text-align: center;
+  // }
+
+  .formHolder {
+    padding: 25px 0 5px;
+  }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .orangeBanner {
+    height: 131px;
+    padding-top: 30px;
+  }
+
+  .heroImgHolder {
+    max-width: 35%;
+    left: 50px;
+  }
+
+  .heroFooter {
+    .txt-lg {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+
+  .heroName {
+    @include pos-abs($top: null, $right: null, $bottom: -70px, $left: 222px);
+    span {
+      font-size: 14px;
+    }
+  }
+
+  // .heroFooterLeft {
+  //   .caption2 {
+  //     font-size: 13px;
+  //     line-height: 1;
+  //   }
+  // }
+
+  .formHolder {
+    padding: 12px 0;
+    div {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+  .heroImgHolder {
+    max-width: 44%;
+    left: 0px;
+    & + div {
+      width: 64%;
+    }
+  }
+
+  .heroName {
+    @include pos-abs($top: null, $right: null, $bottom: -55px, $left: 130px);
+  }
+  // .heroFooterLeft {
+  //   padding: 0 0 12px;
+  // }
+}

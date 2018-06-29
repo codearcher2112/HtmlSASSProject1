@@ -1,0 +1,50 @@
+@media only screen and (max-width: $screen-lg) {
+
+}
+
+@media only screen and (max-width: $screen-md) {
+  .whySectionBg {
+    left: -90px;
+  }
+}
+
+@media only screen and (max-width: $screen-sm) {
+  .whyList {
+    li {
+      float: none;
+      padding-bottom: 30px;
+      padding-left: 50px;
+      &:before {
+        width: 38px;
+        height: 38px;
+      }
+      h5 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .whySection {
+    padding-top: 35px;
+    padding-bottom: 30px;
+    h3 {
+      font-size: 30px;
+    }
+
+    .txt-md {
+      font-size: 18px;
+    }
+  }
+
+  .whySectionBg {
+    position: static;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: $screen-xs) {
+
+}

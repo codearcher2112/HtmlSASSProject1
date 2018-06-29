@@ -1,0 +1,25 @@
+.petName {
+  padding: 11px 8px;
+  border: 2px solid #e5e5e5;
+  @include radius(10px);
+  @include placeholder-styles($font_family: $font-tertiar, $color: #999999, $font_size: 20px, $font_weight: null, $font_style: null);
+  font-family: $font-tertiar;
+  font-size: 20px;
+  color: #999999;
+}
+
+/* ----- Footer Form Styles Start----- */
+.footerInput {
+  width: 100%;
+  padding: 14px 80px 14px 14px;
+  background: $white;
+  @include radius(10px);
+  @include placeholder-styles($font_family: $font-tertiar, $color: $medium-gray, $font_size: 16px, $font_weight: null, $font_style: null);
+  font-family: $font-tertiar;
+  font-size: 16px;
+  color: $medium-gray;
+  & + button {
+    @include pos-abs($top: 50%, $right: 5px, $bottom: null, $left: null);
+    transform: translate(0, -50%);
+  }
+}
