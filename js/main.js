@@ -17,22 +17,22 @@ $(document).ready(function() {
   // Header Menu Toggle
   $('.primaryNavLeft li').hover(
     function() {
-      $('>ul.dropBox', this).slideDown();
+      $('>ul.dropBox', this).stop( true, true ).slideDown();
       $('>a.toggleMenu',this).addClass('arrowUp');
     },
     function() {
-      $('>ul.dropBox', this).slideUp();
+      $('>ul.dropBox', this).stop( true, true ).slideUp();
       $('>a.toggleMenu',this).removeClass('arrowUp');
     }
   );
 
   $('.primaryNavRight li').hover(
     function() {
-      $('>ul.dropBox', this).slideDown();
+      $('>ul.dropBox', this).stop( true, true ).slideDown();
       $('>a.toggleMenu', this).addClass('arrowUp');
     },
     function() {
-      $('>ul.dropBox', this).slideUp();
+      $('>ul.dropBox', this).stop( true, true ).slideUp();
       $('>a.toggleMenu', this).removeClass('arrowUp');
     }
   );
